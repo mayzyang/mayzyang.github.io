@@ -43,9 +43,7 @@ body {
 }
 
 .masthead {
-  padding-top: 9px;
   margin-bottom: -10px;
-  padding-bottom: 8px;
   background-color: #c1f0ed;
   overflow: hidden;
   z-index: 999;
@@ -94,7 +92,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding-top: 25px;
+  padding-top: 32px;
   margin: 0px 12px 0px 12px;
 }
 
