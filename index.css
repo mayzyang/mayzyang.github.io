@@ -86,7 +86,7 @@ body {
 }
 
 .tab button {
-  font-weight: bolder;
+  font-weight: bold;
   background-color: inherit;
   font-family: "Montserrat";
   border: none;
@@ -140,10 +140,22 @@ h2 {
   font-family: "Montserrat";
   line-height: 20px;
   text-align: center;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+  font-family: "Montserrat";
+  line-height: 20px;
+  text-align: center;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 13px;
+  font-weight: normal;
   letter-spacing: 0.5px;
   font-family: "Montserrat";
   line-height: 0px;
@@ -208,7 +220,6 @@ ul {
   border: none;
   outline: none;
   font-size: 14px;
-  font-weight: bold;
   color: black;
   font-family: "Montserrat";
   display: inline-block;
@@ -220,7 +231,6 @@ ul {
 }
 
 .btn.active {
-  font-weight: bold;
   border: none;
   background-color: #ffffcc;
   color: black;
@@ -234,12 +244,12 @@ ul {
 /* ADDING DONWLOADED FONTS */
 @font-face {
   font-family: 'Montserrat';
-  src: url('Montserrat-light.eot'); /* IE9 Compat Modes */
-  src: url('Montserrat-light?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Montserrat-light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Montserrat-light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Montserrat-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Montserrat-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('Montserrat.eot'); /* IE9 Compat Modes */
+  src: url('Montserrat?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Montserrat.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Montserrat.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -253,7 +263,6 @@ ul {
 }
 
 .typeHeading {
-  font-weight: bold;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -322,7 +331,7 @@ a:link {
 }
 
 a:hover {
-    font-weight: bold;
+    font-weight: normal;
     color: #656565;
     background-color: transparent;
     text-decoration: none;
