@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>May Yang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+  <!--****************NAVIGATION BAR***********************************-->
+  <div class="masthead">
+    <button class="tabHead"><h1 class="heading" id="mayHeader" onclick="openTab('about', this)">may yang</h1></button>
+    <div class="nav">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab('about', this)" id="defaultOpen">About</button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab('projects', this)">Projects</button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab('resume', this)">Resume</button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab('blog', this)">Blog</button>
+      </div>
+    </div>
+  </div>
+<!--****************ABOUT ME PAGE***********************************-->
+  <div id="about" class="tabcontent">
+    <h2 class="typeHeading">welcome!</h2>
+    <p>I am a Junior at the <mark><span style="color: #326ae0">University of Michigan</span></mark> studying Computer Science.
+      I was first introduced to the exciting world of technology through Girls Who Code, where
+      I realized I could use Computer Science to express my creativity and satisfy my love of problem solving.
+      This summer I am have returned to Girls Who Code @ BlackRock, as a Teaching Assistant.</p>
+
+    <p>When I'm not coding, I love skiing, hiking with my dad, road trips, browsing Amazon Prime,
+     and watching corgi videos!</p>
+     <br>
+    <img src="Images/profile.png" alt="profile pic" style="width: 200px; height: 180px; opacity: 0.9;">
+    <div></div>
+    <div class="contactIcons"><a href = "https://github.com/mayzyang" target="_blank"><i class="fa fa-github"></i></a></div>
+    <div class="contactIcons"><a href = "mailto:mayyang@umich.edu"><i class="fa fa-envelope"></i></a></div>
+    <div class="contactIcons"><a href = "https://www.linkedin.com/in/mayy-yangg/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+  </div>
+  <!--****************PROJECTS PAGE***********************************-->
+  <div id="projects" class="tabcontent" style="display: none;">
+    <h2 class="typeHeading"> noteworthy projects!</h2>
+    <div id="projectButtons">
+      <button class="btn active" onclick="filterSelection('all')"> show all</button>
+      <button class="btn" onclick="filterSelection('eecs183')"> eecs183</button>
+      <button class="btn" onclick="filterSelection('eecs280')"> eecs280</button>
+      <button class="btn" onclick="filterSelection('eecs281')"> eecs281</button>
+      <button class="btn" onclick="filterSelection('eecs370')"> eecs370</button>
+      <button class="btn" onclick="filterSelection('girlswhocode')"> girlswhocode</button>
+      <button class="btn" onclick="filterSelection('other')"> other</button>
+    </div>
+    <div class="tileContainer">
+      <!--********************EECS183 EECS183 EECS183 EECS183*****************************************-->
+      <a class="tile eecs183" href="#tetris">
+        <h2>arcade tetris</h2>
+        <h3>eecs183 | c++ | arduino</h3>
+        <div class="projIcon"><img src="Images/tetris1.png"></div>
+      </a>
+
+      <div id="tetris" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>arcade tetris</h2>
+          <h3>eecs183 | c++ | arduino</h3>
+          <ul>
+              <li>Used priority queues and object oriented design to create and optimize a stock trading algorithm</li>
+              <li>Implemented various pairing heaps in order to _______</li>
+              <li>Developed a function to find the ideal selling time of a stock, given all offers</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs183" href="#ohhi">
+        <h2>0hh1</h2>
+        <h3>eecs183 | c++</h3>
+        <div class="projIcon"><img src="Images/ohhi1.png"></div>
+      </a>
+
+      <div id="ohhi" class="overlay">
+        <div class="popup">
+          <!--<div class="projIcon"><img src="Images/myChoice.png"></div>-->
+          <a class="close" href="#">&times;</a>
+          <h2>0hh1</h2>
+          <h3>eecs183 | c++</h3>
+          <ul>
+              <li>Implemented the popular game 0hh1 in C++ using object oriented programming.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--********************EECS370 EECS370 EECS370 EECS370*****************************************-->
+      <a class="tile eecs370" href="#pipeline">
+        <h2>pipeline simulator</h2>
+        <h3>eecs370 | c</h3>
+        <div class="projIcon"><img src="Images/html.png"></div>
+      </a>
+
+      <div id="pipeline" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>pipeline simulator</h2>
+          <h3>eecs370 | c</h3>
+          <ul>
+              <li>Simulated a 5 stage RISC pipeline in order to efficiently move thousands of instructions to the processor</li>
+              <li>Implemented stalls and ____ to account for data and control hazards</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs370" href="#cache">
+        <h2>cache simulator</h2>
+        <h3>eecs370 | c</h3>
+        <div class="projIcon"><img src="Images/cpu1.png"></div>
+      </a>
+
+      <div id="cache" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>cache simulator</h2>
+          <h3>eecs370 | c</h3>
+          <ul>
+              <li>Used C to simulate fully associate, set associative and direct mapped caches.</li>
+              <li>Implemented write-through and allocate on write properties</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs370" href="#assembler">
+        <h2>LC2K assembler & simulator</h2>
+        <h3>eecs370 | c</h3>
+        <div class="projIcon"><img src="Images/binary.png"></div>
+      </a>
+
+      <div id="assembler" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>LC2K assembler & simulator</h2>
+          <h3>eecs370 | c</h3>
+          <ul>
+              <li>Simulated a 5 stage RISC pipeline in order to efficiently move thousands of instructions to the processor</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs370" href="#linker">
+        <h2>linker</h2>
+        <h3>eecs370 | c</h3>
+        <div class="projIcon"><img src="Images/processor.png"></div>
+      </a>
+
+      <div id="linker" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>pipeline simulator</h2>
+          <h3>eecs370 | c</h3>
+          <ul>
+              <li>Created a program that assembles an assembly file into an object file, and then implemented a linker to link multiple object files into one executable consisting of machine code.</li>
+              <li>The executable was run using the LC2K simulator project completed previously</li>
+              <li>This project was completed in order to demonstrate the linking process, and how procedure calls work in assembly language.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--********************EECS281 EECS281 EECS281 EECS281*****************************************-->
+      <a class="tile eecs281" href="#logmanager">
+        <h2>log manager</h2>
+        <h3>eecs281 | c++</h3>
+        <div class="projIcon"><img src="Images/list1.png"></div>
+      </a>
+
+      <div id="logmanager" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>log manager</h2>
+          <h3>eecs281 | c++</h3>
+          <ul>
+              <li>Read and classified tens of thousands of log entries, to allow for efficient searching and sorting</li>
+              <li>Evaluated run time and memory trade-offs for storing and accessing data</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs281" href="#stocksonstocks">
+        <h2>stocks on stocks</h2>
+        <h3>eecs281 | c++</h3>
+        <div class="projIcon"><img src="Images/stocks1.png"></div>
+      </a>
+
+      <div id="stocksonstocks" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>stocks on stocks</h2>
+          <h3>eecs281 | c++</h3>
+          <ul>
+              <li>Used priority queues and object oriented design to create and optimize a stock trading algorithm</li>
+              <li>Implemented various pairing heaps in order to _______</li>
+              <li>Developed a function to find the ideal selling time of a stock, given all offers</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs281" href="#puzzlesolver">
+        <h2>puzzle solver</h2>
+        <h3>eecs281 | c++</h3>
+        <div class="projIcon"><img src="Images/puzzle.png"></div>
+      </a>
+
+      <div id="puzzlesolver" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>puzzle solver</h2>
+          <h3>eecs281 | c++</h3>
+          <ul>
+              <li>Simulated a 5 stage RISC pipeline in order to efficiently move thousands of instructions to the processor</li>
+              <li>Implemented stalls and ____ to account for data and control hazards</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile eecs281" href="#zoo">
+        <h2>zoo keeper</h2>
+        <h3>eecs281 | c++</h3>
+        <div class="projIcon"><img src="Images/zoo2.png"></div>
+      </a>
+
+      <div id="zoo" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <h2>zoo keeper</h2>
+          <h3>eecs281 | c++</h3>
+          <ul>
+              <li>Simulated a 5 stage RISC pipeline in order to efficiently move thousands of instructions to the processor</li>
+              <li>Implemented stalls and ____ to account for data and control hazards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--**************************GWC GWC GWC GWC*****************************************-->
+      <a class="tile girlswhocode" href="#mychoice">
+        <h2>my choice</h2>
+        <h3>2015 | girls who code | html</h3>
+        <div class="projIcon"><img src="Images/mychoice1.png"></div>
+      </a>
+
+      <div id="mychoice" class="overlay">
+        <div class="popup">
+          <!--<div class="projIcon"><img src="Images/myChoice.png"></div>-->
+          <a class="close" href="#">&times;</a>
+          <h2>my choice</h2>
+          <h3>2015 | girls who code | html</h3>
+          <ul>
+              <li>Collaborated with 2 peers to create an interactive "Choose Your Own Adventure" web game that brings awareness to intersectional feminism, by allowing users to experience first-hand the micro-aggressions girls face daily</li>
+              <li>Implemented a Google map API so users can go choose a country, and go through a "day in the life" of girls from various cultural backgrounds</li>
+              <li>Presented project to over 100 people, including the CEO of Girls Who Code</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile girlswhocode" href="#blackjack">
+        <h2>blackjack</h2>
+        <h3>2018 | girls who code | python</h3>
+        <div class="projIcon"><img src="Images/cards1.png"></div>
+      </a>
+
+      <div id="blackjack" class="overlay">
+        <div class="popup">
+          <!--<div class="projIcon"><img src="Images/myChoice.png"></div>-->
+          <a class="close" href="#">&times;</a>
+          <h2>blackjack</h2>
+          <h3>2018 | girls who code | python</h3>
+          <ul>
+              <li>Implemented a BlackJack game against a randomized dealer using the Deck of Cards API</li>
+              <li>Completed as a teaching assistant for the API unit during the GWC SIP</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="tile girlswhocode" href="#hangman">
+        <h2>hangman</h2>
+        <h3>2018 | girls who code | python</h3>
+        <div class="projIcon"><img src="Images/hangman1.png"></div>
+      </a>
+
+      <div id="hangman" class="overlay">
+        <div class="popup">
+          <!--<div class="projIcon"><img src="Images/myChoice.png"></div>-->
+          <a class="close" href="#">&times;</a>
+          <h2>hangman</h2>
+          <h3>2018 | girls who code | python</h3>
+          <ul>
+              <li>Live coded a 2 person hangman game in front of a class, in order to demonstrate user input and nested lists</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+          <script>
+              filterSelection("all");
+              function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("tile");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                  RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                }
+              }
+
+              function AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+              }
+
+              function RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                  }
+                }
+                element.className = arr1.join(" ");
+              }
+
+              // Add active class to the current button (highlight it)
+              var btnContainer = document.getElementById("projectButtons");
+              var btns = btnContainer.getElementsByClassName("btn");
+              for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function(){
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "");
+                  this.className += " active";
+                });
+              }
+
+          </script>
+  </div>
+  <!--****************MY RESUME***********************************-->
+  <div id="resume" class="tabcontent" style="display: none;">
+    <h2 class="typeHeading">my resume!</h2>
+    <br>
+    <embed src="Resume_May.pdf" type="application/pdf" width="85%" height="700px"/>
+  </div>
+  <!--****************MY BLOG***********************************-->
+  <div id="blog" class="tabcontent" style="display: none;">
+    <h2 class="typeHeading">blog & updates!</h2>
+    <form class="searchbar" action="/action_page.php">
+      <input type="text" placeholder="search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <br>
+    <!--make table of contents that show/hide elements based on onclick-->
+    <!-- have table of contents that pull up sub-headings-->
+    <mark><h4>Girls Who Code visits the MoMA</h4></mark>
+    <h5>8.9.2018</h5>
+    <p id="blogpost">Two weeks ago, we took a trip to the MoMA as a Girls Who Code class. We were introduced to the CTO, who
+    opened our eyes to all the unexpected applications of technology in a predominantly artistic environment.
+    She told us about ______. We then visited the new Bodys Kingelez exit, where technology is used to let people
+    experience Bodys' vision in augmented reality. A lot of the girls had preconceieved notions of Computer Science,
+    and this experience definitely helped them see how they could fit into this industry!</p>
+    <br>
+    <mark><h4>Girls Who Code Graduation</h4></mark>
+    <h5>8.22.2018</h5>
+    <p id="blogpost">Two weeks ago, we took a trip to the MoMA as a Girls Who Code class. We were introduced to the CTO, who
+      opened our eyes to all the unexpected applications of technology in a predominantly artistic environment.
+      She told us about ______. We then visited the new Bodys Kingelez exit, where technology is used to let people
+      experience Bodys' vision in augmented reality. A lot of the girls had preconceieved notions of Computer Science,
+      and this experience definitely helped them see how they could fit into this industry!</p>
+
+      <br>
+      <mark><h4>Fture Humanity: What will happen to the jobs?</h4></mark>
+      <h5>8.22.2018</h5>
+      <p id="blogpost">Two weeks ago, we took a trip to the MoMA as a Girls Who Code class. We were introduced to the CTO, who
+        opened our eyes to all the unexpected applications of technology in a predominantly artistic environment.
+        She told us about ______. We then visited the new Bodys Kingelez exit, where technology is used to let people
+        experience Bodys' vision in augmented reality. A lot of the girls had preconceieved notions of Computer Science,
+        and this experience definitely helped them see how they could fit into this industry! Another common philosophy i
+        explore is that tech ISNT taking jobs.</p>
+  </div>
+
+<script>
+  document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

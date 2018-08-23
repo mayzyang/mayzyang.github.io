@@ -1,0 +1,423 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+:root {
+  -breakpoint-xs: 0;
+  -breakpoint-sm: 576px;
+  -breakpoint-md: 768px;
+  -breakpoint-lg: 992px;
+  -breakpoint-xl: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@ms-viewport {
+  width: device-width;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-color: white;
+  display: table;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.masthead {
+  padding-top: 9px;
+  margin-bottom: -10px;
+  padding-bottom: 8px;
+  background-color: #c1f0ed;
+  overflow: hidden;
+  z-index: 999;
+  display: block;
+}
+
+.heading {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-family: "Dominique";
+  display: inline;
+  padding-left: 40px;
+  text-shadow: 1px 1px 1px #b3b8bc;
+}
+
+.tabHead {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+.nav {
+  float: right;
+  position: relative;
+  padding-right: 40px;
+}
+
+.tab {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: sub;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.tab button {
+  font-weight: bolder;
+  background-color: inherit;
+  font-family: "Montserrat";
+  border: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-top: 25px;
+  margin: 0px 12px 0px 12px;
+}
+
+#about {
+  text-align: center;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 70%;
+  font-size: 15.5px;
+}
+
+#projects {
+  text-align: center;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 75%;
+  font-size: 16px;
+}
+
+#resume {
+  text-align: center;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 70%;
+  font-size: 16px;
+}
+
+#blog {
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 125px;
+  width: 70%;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+  font-family: "Montserrat";
+  line-height: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat";
+  line-height: 0px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+h5 {
+  font-size: 11px;
+  margin: 1px 0 0 0;
+  font-family: "Montserrat";
+}
+
+/* STYLING FOR PROJECT FILTERING */
+#projectButtons {
+  margin: 25px 0 15px 0;
+}
+
+.tileContainer {
+  overflow: hidden;
+}
+
+.tileContainer ul {
+    text-align: left;
+}
+
+ul {
+    line-height: 18px;
+    font-family: "Montserrat";
+    margin-left: -10px;
+}
+
+.tile {
+  width: 250px;
+  height: 220px;
+  overflow-y: scroll;
+  text-align: left;
+  display: none;
+  border-style: solid;
+  border-width: 3px;
+  padding: 0 18px 0px 15px;
+  margin: 10px 10px 10px 10px;
+  border-color: #c1f0ed;
+  font-size: 13px;
+  box-shadow: 1px 2px 3px #b3b8bc;
+}
+
+.show {
+  display: inline-block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  font-family: "Montserrat";
+  display: inline-block;
+  padding: 8px 10px 8px 10px;
+  margin: 8px 5px 0 5px;
+  letter-spacing: 1px;
+  background-color: #c1f0ed;
+  box-shadow: 1px 1.5px 1.5px #b3b8bc;
+}
+
+.btn.active {
+  font-weight: bold;
+  border: none;
+  background-color: #ffffcc;
+  color: black;
+  outline-color: #c1f0ed;
+  outline-style: solid;
+  outline-width: 2px;
+  padding: -4px -4px -4px -4px;
+  box-shadow: 1px 2px 3px #b3b8bc;
+}
+
+/* ADDING DONWLOADED FONTS */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-light.eot'); /* IE9 Compat Modes */
+  src: url('Montserrat-light?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Montserrat-light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Montserrat-light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Dominique';
+  src: url('Dominique.eot'); /* IE9 Compat Modes */
+  src: url('Dominique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Dominique.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Dominique.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Dominique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Dominique.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.typeHeading {
+  font-weight: bold;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation:
+    typing 7s steps(50, end),
+    blink-caret .75s step-end;
+}
+
+/* ADDING TYPING EFFECT TO HEADINGS */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent; }
+}
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+mark {
+    background-color: #ffffcc;
+    color: black;
+}
+
+.contactIcons {
+  color: #656565;
+  padding-right: 2px;
+  padding-left: 2px;
+  display: inline-block;
+}
+
+a:link {
+    font-weight: normal;
+    color: #656565;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #656565;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+  color: #656565;
+}
+
+a:active {
+  color: #656565;
+}
+
+/* POPUP MODALS FOR PROJECTS */
+
+.projIcon {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 40px 50px 40px 30px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 40%;
+  overflow: auto;
+}
+
+#blogpost {
+  font-size: 14px;
+}
+
+/* *************SEARCH BAR************************* */
+form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.searchbar button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbar button:hover {
+    background: #0b7dda;
+}
+
+form.searchbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
