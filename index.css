@@ -43,9 +43,9 @@ body {
 }
 
 .masthead {
-  padding-top: 5px;
+  padding-top: 0px;
   margin-bottom: -10px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   background-color: #c1f0ed;
   overflow: hidden;
   z-index: 999;
@@ -86,7 +86,7 @@ body {
 }
 
 .tab button {
-  font-weight: bold;
+  font-weight: normal;
   background-color: inherit;
   font-family: "Montserrat";
   border: none;
