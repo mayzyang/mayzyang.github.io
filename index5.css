@@ -9,6 +9,11 @@
   src: url(../Montserrat-Light.ttf);
 }
 
+@font-face {
+  font-family: "Mont-Bold";
+  src: url(../Montserrat-Bold.ttf);
+}
+
 html {
   font-family: ;
   line-height: 1.15px;
@@ -201,6 +206,7 @@ nav {
   font-size: 14px;
   letter-spacing: 1px;
   color: black;
+  font-weight: bold;
   font-family: "Montserrat-Light";
 }
 
@@ -344,6 +350,11 @@ h5 {
   background-color: #c1f0ed;
   box-shadow: 1px 1.5px 1.5px #b3b8bc;
   cursor: pointer;
+}
+
+#blogStyle {
+  color: black;
+  font-weight: bold;
 }
 
 .btn.active {
