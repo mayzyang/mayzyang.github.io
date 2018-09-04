@@ -175,6 +175,7 @@ body {
   z-index: 990;
   display: block;
   top: 0px;
+  box-shadow: 0px 2px 5px #a9aeb2;
 }
 
 .tabHead {
