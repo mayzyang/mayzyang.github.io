@@ -1,156 +1,155 @@
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
-:root {
-  -breakpoint-xs: 0;
-  -breakpoint-sm: 576px;
-  -breakpoint-md: 768px;
-  -breakpoint-lg: 992px;
-  -breakpoint-xl: 1200px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
-  line-height: 1.15;
+  font-family: ;
+  line-height: 1.15px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
-  height: 100%;
-  margin: 0;
   padding: 0;
-  font-weight: 400;
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
   background-color: white;
   display: table;
   width: 100%;
-  font-family: "Mont";
   overscroll-behavior: none;
+  text-align: center;
 }
 
 @font-face {
-  font-family: "Mont";
-  src: url("Montserrat-light.ttf")
-}
-@media only screen and (max-width: 576px) {
-    .heading {
-        font-size: 40px;
-        line-height: 45px;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
 
-    .tabHead {
-      text-align: center;
-    }
-    nav {
-        margin-bottom: 10px;
-    }
-    .tab {
-        margin-top: 5px;
-    }
-    .tablinks button {
-        margin: 0px 6px 0px 6px;
-    }
-    .container {
-        width: 75%;
-    }
-    .popup {
-        margin: 50px auto;
-        width: 70%;
-        padding: 40px 40px 40px 20px;
-    }
+}
+
+@font-face {
+
 }
 
 @media only screen and (max-width: 576px) {
-  .heading {
-    font-size: 40px;
-    line-height: 45px;
-    margin-Top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  .tablinks button {
-    margin: 0px 6px 0px 6px;
-  }
-
-  .pageContainer {
-    width: 75%;
-    margin: auto;
-    margin-top: 45px;
-    margin-bottom: 60px;
-  }
-
-  .tab{
-    margin-top: 5px;
-    margin-bottom: 2px;
-  }
-
-  .popup {
-    margin: 50px auto;
-    padding: 40px 40px 40px 20px;
-    width: 70%;
-  }
-}
-
-@media (min-width: 576px) {
-  .heading {
-    font-size: 45px;
-    line-height: 50px;
+  .tabHead {
+    font-size: 23px;
+    line-height: 43px;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
 
   nav {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 
   .tab {
-    margin-top: 7px;
+    margin-top: 5px;
+    display: inline-block;
   }
 
-  .tablinks button {
-    margin: 0px 6px 0px 6px;
+  .tab button {
+    margin: 0px 8px 0px 8px;
+  }
+
+  .pageContainer {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   .popup {
     margin: 50px auto;
-    padding: 40px 50px 40px 30px;
-    width: 60%;
+    width: 70%;
+    padding: 40px 40px 40px 20px;
+  }
+
+  .tile {
+    width: 200px;
+    height: 185px;
   }
 }
 
-@media (min-width: 768) {
-  .heading {
-    font-size: 40px;
-    line-height: 50px;
+@media (min-width: 576px) {
+  .tabHead {
+    font-size: 23px;
+    line-height: 43px;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    padding-left: 30px;
-    float: left;
+  }
+
+  nav {
+    margin-bottom: 10px;
   }
 
   .tab {
-    margin-right: 20px;
-    float: right;
+    margin-top: 5px;
+    display: inline-block;
   }
 
-  .tablinks button {
-    padding-top: 10px
-    margin: 0px 6px 0px 6px;
+  .tab button {
+    margin: 0px 8px 0px 8px;
+  }
+
+  .pageContainer {
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .popup {
+    margin: 50px auto;
+    width: 60%;
+    padding: 40px 50px 40px 30px;
+  }
+
+  .tile {
+    width: 200px;
+    height: 185px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabHead {
+    font-size: 23px;
+    line-height: 0px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 30px;
+    float: left;
+  }
+
+  .nav {
+    float: right;
+    padding-right: 45px;
+  }
+
+  .tab {
+    display: inline-block;
+  }
+
+  .tab button {
+    margin: 0px 10px 0px 10px;
+    padding-top: 25px;
+  }
+
+  .pageContainer {
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
   }
 
   .popup {
     margin: 70px auto;
+    width: 45%;
     padding: 40px 50px 40px 30px;
-    width: 60%;
+  }
+
+  .tile {
+    width: 250px;
+    height: 220px;
   }
 }
 
@@ -165,26 +164,21 @@ body {
   top: 0px;
 }
 
-.heading {
+.tabHead {
+  background-color: inherit;
   letter-spacing: 1.5px;
   color: black;
   font-family: "Dominique";
   position: relative;
-  display: block;
   text-shadow: 1px 1px 1px #b3b8bc;
-}
-
-.tabHead {
-  background-color: inherit;
   border: none;
   outline: none;
 }
 
-.nav {
-  /*float: right;*/
-  position: relative;
+nav {
   display: inline;
-  /*padding-right: 40px;*/
+  position: relative;
+  float: right;
 }
 
 .tab {
@@ -197,18 +191,28 @@ body {
   transition: all .3s;
 }
 
-.tab button {
+#blogStyle {
+  color: black;
   font-weight: bold;
+}
+
+.tab button {
   background-color: inherit;
-  font-family: "Mont";
   border: none;
   outline: none;
   font-size: 14px;
   letter-spacing: 1px;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 .tab button:hover {
   cursor: pointer;
+}
+
+.pageContainer {
+  text-align: center;
 }
 
 #about {
@@ -297,9 +301,10 @@ h5 {
   font-family: "Montserrat";
 }
 
-/* STYLING FOR PROJECT FILTERING */
 #projectButtons {
-  margin: 25px 0 15px 0;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .tileContainer {
@@ -311,18 +316,11 @@ h5 {
     text-align: left;
 }
 
-ul {
-    line-height: 18px;
-    font-family: "Montserrat";
-    margin-left: -10px;
-}
-
 .tile {
-  width: 250px;
-  height: 220px;
   overflow-y: scroll;
   text-align: center;
   display: none;
+  vertical-align: middle;
   border-style: solid;
   border-width: 3px;
   padding: 15px 18px 0px 15px;
@@ -344,10 +342,11 @@ ul {
   font-family: "Montserrat";
   display: inline-block;
   padding: 8px 10px 8px 10px;
-  margin: 8px 5px 0 5px;
+  margin: 5px 5px 5px 5px;
   letter-spacing: 1px;
   background-color: #c1f0ed;
   box-shadow: 1px 1.5px 1.5px #b3b8bc;
+  cursor: pointer;
 }
 
 .btn.active {
@@ -359,27 +358,6 @@ ul {
   outline-width: 2px;
   padding: -4px -4px -4px -4px;
   box-shadow: 1px 2px 3px #b3b8bc;
-}
-
-/* ADDING DONWLOADED FONTS */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('Montserrat.eot'); /* IE9 Compat Modes */
-  src: url('Montserrat?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Montserrat.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Montserrat.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Montserrat.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Montserrat.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Dominique';
-  src: url('Dominique.eot'); /* IE9 Compat Modes */
-  src: url('Dominique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Dominique.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Dominique.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Dominique.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Dominique.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .typeHeading {
@@ -478,10 +456,12 @@ a:active {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: block;
 }
 
 .overlay:target {
@@ -490,11 +470,8 @@ a:active {
 }
 
 .popup {
-  margin: 50px auto;
-  padding: 40px 50px 40px 30px;
-  background: #fff;
+  background: white;
   border-radius: 5px;
-  width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -504,7 +481,7 @@ a:active {
   top: 15px;
   right: 25px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
@@ -512,11 +489,5 @@ a:active {
 
 .popup .content {
   max-height: 40%;
-  width: 60%;
-  margin: auto;
   overflow: auto;
-}
-
-#blogpost {
-  font-size: 14px;
 }
