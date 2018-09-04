@@ -47,6 +47,7 @@ body {
 
   nav {
     margin-bottom: 5px;
+    font-size: 12px;
   }
 
   .tab {
@@ -56,6 +57,7 @@ body {
 
   .tab button {
     margin: 0px 8px 0px 8px;
+    font-size: 12px;
   }
 
   .pageContainer {
@@ -87,6 +89,7 @@ body {
 
   nav {
     margin-bottom: 10px;
+    font-size: 12px;
   }
 
   .tab {
@@ -96,6 +99,7 @@ body {
 
   .tab button {
     margin: 0px 8px 0px 8px;
+    font-size: 12px;
   }
 
   .pageContainer {
