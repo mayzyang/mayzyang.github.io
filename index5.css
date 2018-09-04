@@ -206,8 +206,7 @@ nav {
   font-size: 14px;
   letter-spacing: 1px;
   color: black;
-  font-weight: bold;
-  font-family: "Montserrat-Light";
+  font-family: "Mont-Bold";
 }
 
 .tab button:hover {
@@ -352,10 +351,6 @@ h5 {
   cursor: pointer;
 }
 
-#blogStyle {
-  color: black;
-}
-
 .btn.active {
   border: none;
   background-color: #ffffcc;
@@ -497,4 +492,8 @@ a:active {
 .popup .content {
   max-height: 40%;
   overflow: auto;
+}
+
+div#blogStyle {
+  color: black;
 }
