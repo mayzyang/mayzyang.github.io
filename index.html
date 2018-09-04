@@ -23,11 +23,12 @@
         <button class="tablinks" onclick="openTab('resume', this)">Resume</button>
       </div>
       <div class="tab">
-        <button class="tablinks" onclick="openTab('blog', this)">Blog</button>
+        <button class="tablinks"><a href = "https://medium.com/@mmaayy09" target="_blank"><div id="blogStyle">Blog</div></a></button>
       </div>
     </div>
   </div>
 <!--****************ABOUT ME PAGE***********************************-->
+<div class= "pageContainer">
   <div id="about" class="tabcontent">
     <h2 class="typeHeading">welcome!</h2>
     <p>I am a Junior at the <mark><span style="color: #326ae0">University of Michigan</span></mark> studying Computer Science.
@@ -351,12 +352,15 @@
   <div id="resume" class="tabcontent" style="display: none;">
     <h2 class="typeHeading">my resume!</h2>
     <br>
-    <iframe src="https://drive.google.com/file/d/1-GPyK-Tw8FWxRFgAFOKytTGUrilDdBxl/preview" width="90%" height="600"></iframe>
+    <div class="pdf" style="margin-top: 35px">
+      <iframe src="https://drive.google.com/file/d/1-GPyK-Tw8FWxRFgAFOKytTGUrilDdBxl/preview" width="100%" height="100%" scrolling="no"></iframe>
+    </div>
   </div>
   <!--****************MY BLOG***********************************-->
   <div id="blog" class="tabcontent" style="display: none;">
     <h2 class="typeHeading">blog & updates!</h2>
   </div>
+</div>
 
 <script>
   document.getElementById("defaultOpen").click();
