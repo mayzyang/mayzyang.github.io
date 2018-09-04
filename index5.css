@@ -22,11 +22,13 @@ body {
 }
 
 @font-face {
-
+  font-family: "Dominique";
+  src: url(../Dominique.otf);
 }
 
 @font-face {
-
+  font-family: "Montserrat";
+  src: url(../Montserrat-Light.ttf);
 }
 
 @media only screen and (max-width: 576px) {
