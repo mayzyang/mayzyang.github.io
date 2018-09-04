@@ -144,6 +144,7 @@ body {
   .tab button {
     margin: 0px 10px 0px 10px;
     padding-top: 25px;
+    font-size: 14px;
   }
 
   .pageContainer {
@@ -207,7 +208,6 @@ nav {
   background-color: inherit;
   border: none;
   outline: none;
-  font-size: 14px;
   letter-spacing: 1px;
   color: black;
   font-family: "Mont-Bold";
