@@ -200,11 +200,6 @@ nav {
   transition: all .3s;
 }
 
-#blogStyle {
-  color: black;
-  font-weight: bold;
-}
-
 .tab button {
   background-color: inherit;
   border: none;
@@ -212,7 +207,7 @@ nav {
   font-size: 14px;
   letter-spacing: 1px;
   color: black;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Light";
 }
 
 .tab button:hover {
